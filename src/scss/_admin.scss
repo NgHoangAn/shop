@@ -1,0 +1,101 @@
+.admin-dashboard {
+    display: flex;
+}
+
+.admin-dashboard .admin-sidebar {
+    border-right: 1px solid gray;
+    overflow-y: auto;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.admin-sidebar h3 {
+    margin: 0 0 1rem 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.admin-sidebar a {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.admin-sidebar a svg {
+    margin-right: 0.5rem;
+    font-size: 18px;
+}
+
+.admin-dashboard .admin-content {
+    padding: 2rem 3rem;
+    width: 100%;
+}
+
+.link-active {
+    color: #4b70e2;
+    border-left: 3px solid #4b70e2;
+    padding-left: 5px;
+    border-radius: 2px;
+}
+
+.link-inactive {
+    color: rgb(97, 97, 97);
+}
+
+// Create Product
+.create-container{
+    display: flex;
+    justify-content: space-between;
+    .create-form{
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin-top: 2rem;
+        select,input{
+            padding: 7px;
+            min-height: 30px;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid rgb(182,182,182);
+            margin: 0.3rem 0;
+            &:focus{
+                border: 2px solid rgb(0,208,255);
+            }
+        }
+        select{
+            color:rgb(95,95,95);
+        }
+        button{
+            padding: 9px 12px;
+                border-radius: 5px;
+                font-weight: 400;
+                letter-spacing: 1.15px;
+                background-color: #4b70e2;
+                color: #f9f9f9;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                margin: 0.5rem 0;
+        }
+    }
+    .imgReview{
+        margin: 2rem 0 2rem 2rem;
+        padding: 2rem;
+        border: 1px solid rgb(183,183,183);
+        max-width: 300px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        color: rgb(78,78,78);
+        img{
+            max-width: 100%;
+        }
+    }
+}
+        

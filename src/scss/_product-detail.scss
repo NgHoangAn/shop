@@ -1,0 +1,241 @@
+.product-container{
+    padding: 10px;
+}
+.product-container .breadcrumb{
+    padding: 10px 0;
+}
+.product-container .breadcrumb li{
+    display: inline;
+}
+.product-container .breadcrumb li a{
+    display: inline;
+}
+.breadcrumb li+li::before{
+    color: black;
+    padding: 8px;
+    content:"/\00a0";
+}
+.breadcrumb li a:hover{
+    color: #01447e;
+    text-decoration: underline;
+}
+
+.product-container .main-product{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.product-container .img-container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 500px;
+    img{
+        padding: 5px;
+        width: 400px;
+        height: auto;
+    }
+    .social-area{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        .social-icon{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    text-align: center;
+                    font-size: 24px;
+                    line-height: 30px;
+                    color: #fff;
+                    cursor: pointer;
+                        &.facebook-icon {
+                            background-color: #01447e;
+                            &:hover{
+                                background-color: #032f56;
+                            }
+                        }
+                    
+                        &.mess-icon {
+                            background-color: #0084ff;
+                            &:hover{
+                                background-color: #0773d7;
+                            }
+                        }
+                    
+                        &.pin-icon {
+                            background-color: #cd242a;
+                            &:hover{
+                                background-color: #9e1a1f;
+                            }
+                        }
+                    
+                        &.twitter-icon {
+                            background-color: #55acee;
+                            &:hover{
+                                background-color: #3c87c0;
+                            }
+                        }
+                }
+                
+
+        }
+    }
+    
+
+}
+.product-container .product-details{
+    padding: 0 10px;
+}
+.product-details .main-detail{
+    background-color: #fff;
+}
+.product-container .product-details .main-detail h3{
+    font-size: 20px;
+    padding: 10px;
+}
+.product-container .product-details .main-detail .sub-title{
+    display: flex;
+    gap: 10px;
+    margin: 0 10px;
+    font-size: 14px;
+    p{
+        font-weight: 400;
+    }
+    span{
+        color: red;
+    }
+}
+
+.product-container .product-details .main-detail .price{
+    margin: 5px 10px;
+    padding: 20px;
+    background-color: aliceblue;
+    p{
+        font-size: 20px;
+    }
+    span{
+        margin-left: 60px;
+        color: red;
+        font-weight: 800;
+    }
+}
+.product-container .product-details .main-detail .quantity{
+    margin: 15px 10px;
+    align-items: center;
+    display: flex;
+    .actions{
+        margin-left: 24px;
+        button{
+            width: 40px;
+            height: 40px;
+            font-weight: 700;
+            border: 1px solid #f3f4f4;
+            background: #fff;
+            cursor: pointer;
+            p{
+                width: 100%;
+                height: 100%;
+                font-size: 24px;
+            }
+            :hover{
+                background-color: #01447e;
+                color: #fff;
+            }
+        }
+        input{
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            border: 1px solid #f3f4f4;
+        }
+    }
+}
+.main-detail .add-to-cart-area{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    button{
+        padding: 5px 20px;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid #f3f4f4;
+
+    }
+    .add-cart{
+        background-color: #fff;
+        border-color: #e70505;
+        color: #e70505;
+    }
+    .add-cart:hover{
+        background-color: #e70505;
+        color: #fff;
+    }
+    .buy-now{
+        background-color: #e70505;
+        color: #fff;
+    }
+    .buy-now:hover{
+        background-color: #fff;
+        color: #e70505;
+        border-color: #e70505;
+    }
+}
+.main-detail .product-delivery{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+    .sub-delivery{
+        display: flex;
+        align-items: center;
+        span {
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+    
+}
+.product-details .sub-detail{
+    background-color: #fff;
+    margin: 20px 0;
+    p{
+        margin: 0 10px;
+        padding: 15px 0;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+.product-details .desc-detail{
+    background-color: #fff;
+    position: relative;
+    h4{
+        padding: 5px 10px;
+        border-bottom: 1px solid red;
+    }
+    p{
+        padding: 5px 10px;
+        min-height: 200px;
+    }
+}
+
+
+
+
+
+
+

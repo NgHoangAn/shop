@@ -1,0 +1,113 @@
+.login-container {
+    display: flex;
+    margin: 50px 450px;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #eeeeee;
+    background: white;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.login-content {
+    min-width: fit-content;
+    padding: 0 50px;
+    line-height: 1.5;
+    min-height: 600px;
+    min-width: 500px;
+}
+
+.login-title {
+    margin-bottom: 20px;
+}
+
+.login-title .icon-title {
+    color: blue;
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.login-title .main-title {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.login-title .sub-title {
+    font-size: 14px;
+}
+
+.login-other {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-other button {
+    width: 100%;
+    border: 1px solid #eeeeee;
+    background: none;
+    padding: 10px 50px;
+    border-radius: 20px;
+}
+
+.main-login .content {
+    border: 1px solid #eeeeee;
+    text-align: center;
+    background: #eeeeee;
+    line-height: 0.1px;
+    margin-bottom: 20px;
+}
+
+.main-login .content span {
+    background: white;
+    padding: 0 10px;
+}
+
+.main-login form>input {
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #eeeeee;
+    margin-bottom: 15px;
+}
+
+.option-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.option-login label {
+    text-align: center;
+}
+
+.option-login input {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.btnSubmit {
+    width: 100%;
+    border: 1px solid #eeeeee;
+    /* background: none; */
+    padding: 10px 50px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.login-error-status {
+    margin-bottom: 20px;
+    color: darkgoldenrod;
+}
+
+.register-link {
+    display: flex;
+}
+
+.login-image {
+    max-height: 600px;
+    max-width: 500px;
+}

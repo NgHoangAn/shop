@@ -1,0 +1,7 @@
+@import './login.scss';
+@import './admin.scss';
+@import './product-detail.scss';
+.main {
+    grid-area: main;
+    background: #f5f3ea;
+}

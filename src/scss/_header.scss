@@ -1,0 +1,211 @@
+
+.header {
+    grid-area: header;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(193, 125, 125);
+    background-color: #e7e9eb;
+}
+
+.header-top .logo {
+    flex-grow: 2;
+}
+
+.header-top .search {
+    flex-grow: 4;
+    position: relative;
+}
+
+.header-top .search .searchText {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    align-items: center;
+    margin-right: 0;
+}
+
+.header-top .search .searchBtn {
+    position: absolute;
+    font-size: 20px;
+    top: 25%;
+    right: 0;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.header-top .search .searchBtn:hover {
+    color: #e74c3c;
+}
+
+.header-top .user-action {
+    flex-grow: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-top .user-action .btn {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.header-top .user-action .btn:hover {
+    background-color: #545454;
+}
+
+.header-top .user-action .btn p {
+    color: #333;
+}
+
+.header-top .user-action .btn:hover p {
+    color: #e7e9eb;
+}
+
+.header-top .user-action .nav-bag {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-top .user-action .bag-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    height: 20px;
+    width: 20px;
+    font-size: 14px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+}
+
+.header-top .logo-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.logo-container ul li {
+    background: #fff;
+    border-radius: 10px;
+    margin: 5px;
+    float: left;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container ul li a {
+    text-decoration: none !important;
+    display: inline-block;
+}
+
+.logo-holder {
+    text-align: center;
+}
+
+.logo-4 h3 {
+    margin-top: 8px;
+    color: #e74c3c;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 0.65;
+    font-family: "Lobster", cursive;
+}
+
+.logo-4 p {
+    font-size: 14px;
+    margin-left: 50px;
+    color: #545454;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-style: italic;
+    font-family: "Mansalva", cursive;
+}
+
+.header .header-main {
+    display: block;
+    background-color: #e7e9eb;
+}
+
+.header .header-main .menu-category-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.header .header-main .menu-category-list .menu-category:not(:nth-child(2)) {
+    position: relative;
+}
+
+.header .header-main .menu-category-list .menu-category>.menu-title {
+    position: relative;
+    color: hsl(0, 0%, 27%);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 0;
+    transition: 0.2s ease;
+}
+
+.header-main .menu-category-list .menu-category .menu-title:hover {
+    color: hsl(353, 100%, 78%);
+}
+
+.menu-category-list .menu-category>.menu-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: hsl(353, 100%, 78%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.2s ease;
+}
+
+.menu-category-list .menu-category>.menu-title:hover::after {
+    transform: scaleX(1);
+}
+
+.dropdown-list {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    background: white;
+    padding: 20px 0;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 93%);
+    box-shadow: 0 3px 5px rgba(15, 15, 15, 0.1);
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.menu-category-list .menu-category:hover .dropdown-list {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.menu-category-list .menu-category .dropdown-list .dropdown-item a {
+    color: hsl(0, 0%, 47%);
+    font-size: 0.875rem;
+    text-transform: capitalize;
+    padding: 4px 20px;
+    transition: 0.2s ease;
+    display: block;
+}

@@ -1,0 +1,149 @@
+footer {
+    background: hsl(0, 0%, 13%);
+    padding: 30px 20px;
+    grid-area: footer;
+}
+
+.footer-category {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid hsl(0, 0%, 27%);
+}
+
+.footer-nav {
+    border-bottom: 1px solid hsl(0, 0%, 27%);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 20px;
+}
+
+.footer-nav-list {
+    min-width: calc(20% - 16px);
+    width: calc(20% - 16px);
+    flex-grow: 1;
+}
+
+.footer-nav-list:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.footer-nav-item {
+    padding: 3px 0;
+}
+
+.footer-nav-link,
+.footer-nav-item .content {
+    width: max-content;
+    color: hsl(0, 0%, 47%);
+    font-size: 0.875rem;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+.nav-title {
+    position: relative;
+    color: white;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.nav-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: hsl(353, 100%, 78%);
+    width: 60px;
+    height: 1px;
+}
+
+.footer-nav-item.flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.icon-box {
+    color: hsl(0, 0%, 47%);
+    font-size: 25px;
+}
+
+.footer-nav-item .content {
+    font-style: normal;
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer-category-title {
+    color: hsl(353, 100%, 78%);
+    font-size: 0.938rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.footer-category-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 3px;
+    margin-bottom: 15px;
+}
+
+.category-box-title {
+    color: hsl(0, 0%, 60%);
+    font-size: 0.813rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer-category-link {
+    position: relative;
+    color: hsl(0, 0%, 47%);
+    font-size: 0.875rem;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+.footer-category-link::after {
+    position: absolute;
+    content: "";
+    top: 3px;
+    right: -10px;
+    background: hsl(0, 0%, 47%);
+    width: 1px;
+    height: 15px;
+}
+
+.footer-nav .social-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.copyright {
+    color: hsl(0, 0%, 47%);
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+}
+
+.copyright a {
+    display: inline;
+}
