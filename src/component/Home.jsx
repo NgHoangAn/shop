@@ -1,5 +1,6 @@
 import React from "react";
-import product1 from "../assets/images/product/1.jpg";
+import product1 from "../assets/images/product/template1.png";
+import meat from "../assets/images/icon/meat.png";
 import { BsFillCartPlusFill } from "react-icons/bs";
 
 import slide1 from "../assets/images/slide-1.jpg";
@@ -125,9 +126,9 @@ const Home = () => {
         </div>
       </div>
       <section className="home-collection-1">
-        <div className="">
-          <h3>Món ngon ngày tết</h3>
-          <div className="collection-1-items has-scrollbar">
+        <div>
+          <h3>Săn Deal Hot</h3>
+          <div className="collection-1-items">
             <div className="collection-1-item">
               <div className="cart">
                 <img src={product1} alt="" width="100%" />
@@ -153,15 +154,15 @@ const Home = () => {
                 <img src={product1} alt="" width="100%" />
               </div>
               <div className="cart-desc">
-                <p>Fresh Market</p>
-                <h5>Mâm đa phúc</h5>
-                <p>1,845,000đ</p>
+                <p className="desc-brand">Fresh Market</p>
+                <h5 className="desc-name">Mâm đa phúc</h5>
+                <p className="desc-price">1,845,000đ</p>
               </div>
               <div className="cart-btn">
                 <button>
-                  <p>
+                  <p className="add-to-cart">
                     Thêm vào giỏ
-                    <span>
+                    <span className="add-to-cart-icon">
                       <BsFillCartPlusFill />
                     </span>
                   </p>
@@ -173,15 +174,15 @@ const Home = () => {
                 <img src={product1} alt="" width="100%" />
               </div>
               <div className="cart-desc">
-                <p>Fresh Market</p>
-                <h5>Mâm đa phúc</h5>
-                <p>1,845,000đ</p>
+                <p className="desc-brand">Fresh Market</p>
+                <h5 className="desc-name">Mâm đa phúc</h5>
+                <p className="desc-price">1,845,000đ</p>
               </div>
               <div className="cart-btn">
                 <button>
-                  <p>
+                  <p className="add-to-cart">
                     Thêm vào giỏ
-                    <span>
+                    <span className="add-to-cart-icon">
                       <BsFillCartPlusFill />
                     </span>
                   </p>
@@ -193,15 +194,15 @@ const Home = () => {
                 <img src={product1} alt="" width="100%" />
               </div>
               <div className="cart-desc">
-                <p>Fresh Market</p>
-                <h5>Mâm đa phúc</h5>
-                <p>1,845,000đ</p>
+                <p className="desc-brand">Fresh Market</p>
+                <h5 className="desc-name">Mâm đa phúc</h5>
+                <p className="desc-price">1,845,000đ</p>
               </div>
               <div className="cart-btn">
                 <button>
-                  <p>
+                  <p className="add-to-cart">
                     Thêm vào giỏ
-                    <span>
+                    <span className="add-to-cart-icon">
                       <BsFillCartPlusFill />
                     </span>
                   </p>
@@ -213,15 +214,15 @@ const Home = () => {
                 <img src={product1} alt="" width="100%" />
               </div>
               <div className="cart-desc">
-                <p>Fresh Market</p>
-                <h5>Mâm đa phúc</h5>
-                <p>1,845,000đ</p>
+                <p className="desc-brand">Fresh Market</p>
+                <h5 className="desc-name">Mâm đa phúc</h5>
+                <p className="desc-price">1,845,000đ</p>
               </div>
               <div className="cart-btn">
                 <button>
-                  <p>
+                  <p className="add-to-cart">
                     Thêm vào giỏ
-                    <span>
+                    <span className="add-to-cart-icon">
                       <BsFillCartPlusFill />
                     </span>
                   </p>
@@ -235,23 +236,23 @@ const Home = () => {
         </div>
       </section>
       <section className="home-collection-2">
-        <div className="">
-          <h3>Món ngon ngày tết</h3>
-          <div className="collection-1-items has-scrollbar">
+        <div>
+          <h3>Săn Deal Hot</h3>
+          <div className="collection-1-items">
             <div className="collection-1-item">
               <div className="cart">
                 <img src={product1} alt="" width="100%" />
               </div>
               <div className="cart-desc">
-                <p>Fresh Market</p>
-                <h5>Mâm đa phúc</h5>
-                <p>1,845,000đ</p>
+                <p className="desc-brand">Fresh Market</p>
+                <h5 className="desc-name">Mâm đa phúc</h5>
+                <p className="desc-price">1,845,000đ</p>
               </div>
               <div className="cart-btn">
                 <button>
-                  <p>
+                  <p className="add-to-cart">
                     Thêm vào giỏ
-                    <span>
+                    <span className="add-to-cart-icon">
                       <BsFillCartPlusFill />
                     </span>
                   </p>
@@ -263,15 +264,15 @@ const Home = () => {
                 <img src={product1} alt="" width="100%" />
               </div>
               <div className="cart-desc">
-                <p>Fresh Market</p>
-                <h5>Mâm đa phúc</h5>
-                <p>1,845,000đ</p>
+                <p className="desc-brand">Fresh Market</p>
+                <h5 className="desc-name">Mâm đa phúc</h5>
+                <p className="desc-price">1,845,000đ</p>
               </div>
               <div className="cart-btn">
                 <button>
-                  <p>
+                  <p className="add-to-cart">
                     Thêm vào giỏ
-                    <span>
+                    <span className="add-to-cart-icon">
                       <BsFillCartPlusFill />
                     </span>
                   </p>
@@ -283,15 +284,15 @@ const Home = () => {
                 <img src={product1} alt="" width="100%" />
               </div>
               <div className="cart-desc">
-                <p>Fresh Market</p>
-                <h5>Mâm đa phúc</h5>
-                <p>1,845,000đ</p>
+                <p className="desc-brand">Fresh Market</p>
+                <h5 className="desc-name">Mâm đa phúc</h5>
+                <p className="desc-price">1,845,000đ</p>
               </div>
               <div className="cart-btn">
                 <button>
-                  <p>
+                  <p className="add-to-cart">
                     Thêm vào giỏ
-                    <span>
+                    <span className="add-to-cart-icon">
                       <BsFillCartPlusFill />
                     </span>
                   </p>
@@ -303,15 +304,15 @@ const Home = () => {
                 <img src={product1} alt="" width="100%" />
               </div>
               <div className="cart-desc">
-                <p>Fresh Market</p>
-                <h5>Mâm đa phúc</h5>
-                <p>1,845,000đ</p>
+                <p className="desc-brand">Fresh Market</p>
+                <h5 className="desc-name">Mâm đa phúc</h5>
+                <p className="desc-price">1,845,000đ</p>
               </div>
               <div className="cart-btn">
                 <button>
-                  <p>
+                  <p className="add-to-cart">
                     Thêm vào giỏ
-                    <span>
+                    <span className="add-to-cart-icon">
                       <BsFillCartPlusFill />
                     </span>
                   </p>
@@ -323,15 +324,267 @@ const Home = () => {
                 <img src={product1} alt="" width="100%" />
               </div>
               <div className="cart-desc">
-                <p>Fresh Market</p>
-                <h5>Mâm đa phúc</h5>
-                <p>1,845,000đ</p>
+                <p className="desc-brand">Fresh Market</p>
+                <h5 className="desc-name">Mâm đa phúc</h5>
+                <p className="desc-price">1,845,000đ</p>
               </div>
               <div className="cart-btn">
                 <button>
-                  <p>
+                  <p className="add-to-cart">
                     Thêm vào giỏ
-                    <span>
+                    <span className="add-to-cart-icon">
+                      <BsFillCartPlusFill />
+                    </span>
+                  </p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="collection-category">
+        <div className="cate-area">
+          <div className="cate-btn-area">
+            <p>Nhóm sản phẩm</p>
+            <button>Xem ngay</button>
+          </div>
+          <div className="cate-main">
+            <a href="/">
+              <img src={meat} alt="" />
+              <p>Thịt</p>
+            </a>
+            <a href="/">
+              <img src={meat} alt="" />
+              <p>Thịt</p>
+            </a>
+            <a href="/">
+              <img src={meat} alt="" />
+              <p>Thịt</p>
+            </a>
+            <a href="/">
+              <img src={meat} alt="" />
+              <p>Thịt</p>
+            </a>
+            <a href="/">
+              <img src={meat} alt="" />
+              <p>Thịt</p>
+            </a>
+            <a href="/">
+              <img src={meat} alt="" />
+              <p>Thịt</p>
+            </a>
+            <a href="/">
+              <img src={meat} alt="" />
+              <p>Thịt</p>
+            </a>
+            <a href="/">
+              <img src={meat} alt="" />
+              <p>Thịt</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section className="home-collection-3">
+        <div>
+          <div className="collection-3-title">
+            <h3>Thương hiệu Bapi</h3>
+            <button>Thương hiệu Bapi</button>
+          </div>
+          <div className="collection-1-items">
+            <div className="collection-1-item">
+              <div className="cart">
+                <img src={product1} alt="" width="100%" />
+              </div>
+              <div className="cart-desc">
+                <p className="desc-brand">Fresh Market</p>
+                <h5 className="desc-name">Mâm đa phúc</h5>
+                <p className="desc-price">1,845,000đ</p>
+              </div>
+              <div className="cart-btn">
+                <button>
+                  <p className="add-to-cart">
+                    Thêm vào giỏ
+                    <span className="add-to-cart-icon">
+                      <BsFillCartPlusFill />
+                    </span>
+                  </p>
+                </button>
+              </div>
+            </div>
+            <div className="collection-1-item">
+              <div className="cart">
+                <img src={product1} alt="" width="100%" />
+              </div>
+              <div className="cart-desc">
+                <p className="desc-brand">Fresh Market</p>
+                <h5 className="desc-name">Mâm đa phúc</h5>
+                <p className="desc-price">1,845,000đ</p>
+              </div>
+              <div className="cart-btn">
+                <button>
+                  <p className="add-to-cart">
+                    Thêm vào giỏ
+                    <span className="add-to-cart-icon">
+                      <BsFillCartPlusFill />
+                    </span>
+                  </p>
+                </button>
+              </div>
+            </div>
+            <div className="collection-1-item">
+              <div className="cart">
+                <img src={product1} alt="" width="100%" />
+              </div>
+              <div className="cart-desc">
+                <p className="desc-brand">Fresh Market</p>
+                <h5 className="desc-name">Mâm đa phúc</h5>
+                <p className="desc-price">1,845,000đ</p>
+              </div>
+              <div className="cart-btn">
+                <button>
+                  <p className="add-to-cart">
+                    Thêm vào giỏ
+                    <span className="add-to-cart-icon">
+                      <BsFillCartPlusFill />
+                    </span>
+                  </p>
+                </button>
+              </div>
+            </div>
+            <div className="collection-1-item">
+              <div className="cart">
+                <img src={product1} alt="" width="100%" />
+              </div>
+              <div className="cart-desc">
+                <p className="desc-brand">Fresh Market</p>
+                <h5 className="desc-name">Mâm đa phúc</h5>
+                <p className="desc-price">1,845,000đ</p>
+              </div>
+              <div className="cart-btn">
+                <button>
+                  <p className="add-to-cart">
+                    Thêm vào giỏ
+                    <span className="add-to-cart-icon">
+                      <BsFillCartPlusFill />
+                    </span>
+                  </p>
+                </button>
+              </div>
+            </div>
+            <div className="collection-1-item">
+              <div className="cart">
+                <img src={product1} alt="" width="100%" />
+              </div>
+              <div className="cart-desc">
+                <p className="desc-brand">Fresh Market</p>
+                <h5 className="desc-name">Mâm đa phúc</h5>
+                <p className="desc-price">1,845,000đ</p>
+              </div>
+              <div className="cart-btn">
+                <button>
+                  <p className="add-to-cart">
+                    Thêm vào giỏ
+                    <span className="add-to-cart-icon">
+                      <BsFillCartPlusFill />
+                    </span>
+                  </p>
+                </button>
+              </div>
+            </div>
+            <div className="collection-1-item">
+              <div className="cart">
+                <img src={product1} alt="" width="100%" />
+              </div>
+              <div className="cart-desc">
+                <p className="desc-brand">Fresh Market</p>
+                <h5 className="desc-name">Mâm đa phúc</h5>
+                <p className="desc-price">1,845,000đ</p>
+              </div>
+              <div className="cart-btn">
+                <button>
+                  <p className="add-to-cart">
+                    Thêm vào giỏ
+                    <span className="add-to-cart-icon">
+                      <BsFillCartPlusFill />
+                    </span>
+                  </p>
+                </button>
+              </div>
+            </div>
+            <div className="collection-1-item">
+              <div className="cart">
+                <img src={product1} alt="" width="100%" />
+              </div>
+              <div className="cart-desc">
+                <p className="desc-brand">Fresh Market</p>
+                <h5 className="desc-name">Mâm đa phúc</h5>
+                <p className="desc-price">1,845,000đ</p>
+              </div>
+              <div className="cart-btn">
+                <button>
+                  <p className="add-to-cart">
+                    Thêm vào giỏ
+                    <span className="add-to-cart-icon">
+                      <BsFillCartPlusFill />
+                    </span>
+                  </p>
+                </button>
+              </div>
+            </div>
+            <div className="collection-1-item">
+              <div className="cart">
+                <img src={product1} alt="" width="100%" />
+              </div>
+              <div className="cart-desc">
+                <p className="desc-brand">Fresh Market</p>
+                <h5 className="desc-name">Mâm đa phúc</h5>
+                <p className="desc-price">1,845,000đ</p>
+              </div>
+              <div className="cart-btn">
+                <button>
+                  <p className="add-to-cart">
+                    Thêm vào giỏ
+                    <span className="add-to-cart-icon">
+                      <BsFillCartPlusFill />
+                    </span>
+                  </p>
+                </button>
+              </div>
+            </div>
+            <div className="collection-1-item">
+              <div className="cart">
+                <img src={product1} alt="" width="100%" />
+              </div>
+              <div className="cart-desc">
+                <p className="desc-brand">Fresh Market</p>
+                <h5 className="desc-name">Mâm đa phúc</h5>
+                <p className="desc-price">1,845,000đ</p>
+              </div>
+              <div className="cart-btn">
+                <button>
+                  <p className="add-to-cart">
+                    Thêm vào giỏ
+                    <span className="add-to-cart-icon">
+                      <BsFillCartPlusFill />
+                    </span>
+                  </p>
+                </button>
+              </div>
+            </div>
+            <div className="collection-1-item">
+              <div className="cart">
+                <img src={product1} alt="" width="100%" />
+              </div>
+              <div className="cart-desc">
+                <p className="desc-brand">Fresh Market</p>
+                <h5 className="desc-name">Mâm đa phúc</h5>
+                <p className="desc-price">1,845,000đ</p>
+              </div>
+              <div className="cart-btn">
+                <button>
+                  <p className="add-to-cart">
+                    Thêm vào giỏ
+                    <span className="add-to-cart-icon">
                       <BsFillCartPlusFill />
                     </span>
                   </p>

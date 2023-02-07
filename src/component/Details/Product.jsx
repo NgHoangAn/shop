@@ -70,95 +70,103 @@ const Product = () => {
         <li>Italy</li>
       </ul>
       <div className="main-product">
-        <div className="img-container">
-          <img src={product.image?.url} alt="product" />
-          <div className="social-area">
-            <p>Chia sẻ:</p>
-            <div className="social-icon">
-              <a href="/" className="facebook-icon">
-                <FaFacebookF />
-              </a>
-              <a href="/" className="mess-icon">
-                <FaFacebookMessenger />
-              </a>
-              <a href="/" className="pin-icon">
-                <FaPinterestP />
-              </a>
-              <a href="/" className="twitter-icon">
-                <FaTwitter />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="product-details">
-          <div className="main-detail">
-            <h3>{product.name}</h3>
-            <div className="sub-title">
-              <p>
-                Mã sản phẩm: <span>{product._id}</span>
-              </p>
-              <p>
-                Tình trạng: <span>Còn hàng</span>
-              </p>
-              <p>
-                Thương hiệu: <span>{product.brand}</span>
-              </p>
-            </div>
-            <div className="price">
-              <p>
-                Giá:<span>{product.price?.toLocaleString()} đ</span>
-              </p>
-            </div>
-            <div className="quantity">
-              <div className="quantity-title">Số lượng:</div>
-              <div className="actions">
-                <button>
-                  <p onClick={() => handleDownQuantity()}>-</p>
-                </button>
-                <input type="text" value={quantity} />
-                <button>
-                  <p onClick={() => handleUpQuantity()}>+</p>
-                </button>
+        {isLoading ? (
+          <>
+            <p>Loading....</p>
+          </>
+        ) : (
+          <>
+            <div className="img-container">
+              <img src={product.image?.url} alt="product" />
+              <div className="social-area">
+                <p>Chia sẻ:</p>
+                <div className="social-icon">
+                  <a href="/" className="facebook-icon">
+                    <FaFacebookF />
+                  </a>
+                  <a href="/" className="mess-icon">
+                    <FaFacebookMessenger />
+                  </a>
+                  <a href="/" className="pin-icon">
+                    <FaPinterestP />
+                  </a>
+                  <a href="/" className="twitter-icon">
+                    <FaTwitter />
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="add-to-cart-area">
-              <button
-                className="add-cart"
-                onClick={() => handleAddToCart(product, quantity)}
-              >
-                Thêm vào giỏ
-              </button>
-              <button className="buy-now">Mua ngay</button>
+            <div className="product-details">
+              <div className="main-detail">
+                <h3>{product.name}</h3>
+                <div className="sub-title">
+                  <p>
+                    Mã sản phẩm: <span>{product._id}</span>
+                  </p>
+                  <p>
+                    Tình trạng: <span>Còn hàng</span>
+                  </p>
+                  <p>
+                    Thương hiệu: <span>{product.brand}</span>
+                  </p>
+                </div>
+                <div className="price">
+                  <p>
+                    Giá:<span>{product.price?.toLocaleString()} đ</span>
+                  </p>
+                </div>
+                <div className="quantity">
+                  <div className="quantity-title">Số lượng:</div>
+                  <div className="actions">
+                    <button>
+                      <p onClick={() => handleDownQuantity()}>-</p>
+                    </button>
+                    <input type="text" value={quantity} />
+                    <button>
+                      <p onClick={() => handleUpQuantity()}>+</p>
+                    </button>
+                  </div>
+                </div>
+                <div className="add-to-cart-area">
+                  <button
+                    className="add-cart"
+                    onClick={() => handleAddToCart(product, quantity)}
+                  >
+                    Thêm vào giỏ
+                  </button>
+                  <button className="buy-now">Mua ngay</button>
+                </div>
+                <div className="product-delivery">
+                  <div className="sub-delivery">
+                    <span>
+                      <FaBox />
+                    </span>
+                    <p>Cam kết 100% chính hãng</p>
+                  </div>
+                  <div className="sub-delivery">
+                    <span>
+                      <CiDeliveryTruck />
+                    </span>
+                    <p>Hỗ tợ 24/7</p>
+                  </div>
+                  <div className="sub-delivery">
+                    <span>
+                      <BiLike />
+                    </span>
+                    <p>Mở hợp kiểm tra nhận hàng</p>
+                  </div>
+                </div>
+              </div>
+              <div className="sub-detail">
+                <p>Giảm 10 % khi đặt trước 5 ngày</p>
+              </div>
+              <div className="desc-detail">
+                <h4>Mô tả sản phẩm</h4>
+                <p>{product.desc}</p>
+              </div>
             </div>
-            <div className="product-delivery">
-              <div className="sub-delivery">
-                <span>
-                  <FaBox />
-                </span>
-                <p>Cam kết 100% chính hãng</p>
-              </div>
-              <div className="sub-delivery">
-                <span>
-                  <CiDeliveryTruck />
-                </span>
-                <p>Hỗ tợ 24/7</p>
-              </div>
-              <div className="sub-delivery">
-                <span>
-                  <BiLike />
-                </span>
-                <p>Mở hợp kiểm tra nhận hàng</p>
-              </div>
-            </div>
-          </div>
-          <div className="sub-detail">
-            <p>Giảm 10 % khi đặt trước 5 ngày</p>
-          </div>
-          <div className="desc-detail">
-            <h4>Mô tả sản phẩm</h4>
-            <p>{product.desc}</p>
-          </div>
-        </div>
+          </>
+        )}
       </div>
     </div>
   );

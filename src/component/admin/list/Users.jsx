@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
-import { usersDelete, usersFetch } from "../../../slide/usersSlide";
+import { usersFetch } from "../../../slide/usersSlide";
 
 export const UsersList = () => {
   const navigate = useNavigate();

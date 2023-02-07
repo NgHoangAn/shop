@@ -156,10 +156,7 @@
 .collection-1-items {
     display: flex;
     align-items: center;
-    gap: 30px;
     overflow: auto hidden;
-    scroll-snap-type: inline mandatory;
-    overscroll-behavior-inline: contain;
 }
 
 .collection-1-item {
@@ -169,9 +166,10 @@
     background: wheat;
     border-radius: 10px;
     scroll-snap-align: start;
-    min-width: calc(25% - 20px);
+    min-width: calc(19% - 20px);
+    margin: 0 10px;
     .cart {
-            max-width: 300px;
+            max-width: 250px;
             margin: auto;
             text-align: center;
         }
@@ -230,12 +228,76 @@
     padding: 20px 100px;
     border: none;
     border-radius: 10px;
-    margin: 10px 0;
+    margin: 0 0 10px 0;
     font-size: 1.125rem;
 }
 
 .home-collection-2 {
     margin: 0 60px;
-    background: none;
-    margin-top: 20px;
+    border-radius: 10px;
+    h3 {
+        margin: 0 20px;
+        padding: 10px 0;
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
+.collection-category{
+    margin: 20px 60px;
+    background: aqua;
+    .cate-area{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        .cate-btn-area{
+            margin-left: 80px;
+            p{
+                font-size: 20px;
+                font-weight: 600;
+            }
+            button{
+                padding: 8px;
+                border-radius: 15px;
+                text-transform: uppercase;
+            }
+        }
+        .cate-main{
+            display: flex;
+            gap: 30px;
+            text-align: center;
+            padding: 10px 0;
+            img{
+                border-radius: 50%;
+            }
+            p{
+                text-transform: capitalize;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+
+    }
+}
+.home-collection-3 {
+    margin: 40px 60px;
+    border-radius: 10px;
+    .collection-3-title{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        h3 {
+                margin: 0 20px;
+                padding: 10px 0;
+                font-size: 24px;
+                font-weight: 700;
+            }
+            button{
+                margin-right: 10px;
+                border-radius: 15px;
+                text-transform: uppercase;
+                font-size: 10px;
+                padding: 0 8px;
+            }
+    }
+    
 }
