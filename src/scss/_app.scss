@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bangers|Cinzel:400,700,900|Lato:100,300,400,700,900|Lobster|Lora:400,700|Mansalva|Muli:200,300,400,600,700,800,900|Open+Sans:300,400,600,700,800|Oswald:200,300,400,500,600,700|Roboto:100,300,400,500,700,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+li {
+    list-style-type: none;
+}
+
+.App {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "main main main main"
+        "footer footer footer footer";
+    column-gap: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* .container {
+  background-color: cadetblue;
+  border: 1px solid black;
+} */
+
+.has-scrollbar {
+    padding-bottom: 1px;
+}
+
+.has-scrollbar::-webkit-scrollbar {
+    width: 2px;
+    /* for vertical scroll */
+    height: 5px;
+    /* for horizontal scroll */
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+}
+
+.has-scrollbar:hover::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 90%);
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: hsl(0, 0%, 80%);
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--white);
+    border-left: 1px solid var(--cultured);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 80%);
+    border: 3px solid var(--white);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: hsl(0, 0%, 70%);
+}

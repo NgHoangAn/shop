@@ -1,0 +1,143 @@
+
+.checkout-area{
+    display: flex;
+    justify-content: center;
+    .left{
+        border-right: 1px solid #333;
+        padding: 50px;
+        .title{
+            h3{
+                margin-bottom: 15px;
+            }
+            .direct{
+                display: flex;
+                margin-bottom: 10px;
+            }
+        }
+        .form-info{
+            margin-top: 10px;
+            input{
+                display: block;
+                width: 100%;
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+            div{
+                margin-bottom: 10px;
+                .email{
+                    width: 65%;
+                    margin-right: 5%;
+                    padding: 5px;
+                    display: inline;
+                }
+                .phone{
+                    width: 30%;
+                    padding: 5px;
+                    display: inline;
+                }
+            }
+            .chose-direct{
+                margin-bottom: 10px;
+                select{
+                    padding: 5px;
+                    width: 30%;
+                }
+                .margin-area {
+                    margin: 0 5%;
+                }
+            }
+            .delivery{
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    input{
+                        display: inline;
+                        width: auto;
+                        padding: 0;
+                        margin: 0 10px 0 0;
+                    }
+                }
+            }
+            .payment-select{
+                select{
+                    padding: 5px;
+                    width: 100%;
+                }
+            }
+        }
+        .button-area{
+            display: flex;
+            justify-content: space-between;
+            button{
+                padding: 5px;
+            }
+        }
+    }
+    .right{
+        padding: 50px;
+        .product-area{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            border-bottom: 1px solid #333;
+            .img{
+                width: 50px;
+                border: 1px solid;
+                border-radius: 8px;
+                overflow: hidden;
+                margin-bottom: 5px;
+                img{
+                    width: 100%;
+                }
+            }
+            .desc{
+                .main-desc{
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+                .sub-desc{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: darkslateblue;
+                }
+            }
+            .price{
+                p{
+                    font-size: 16px;
+                    font-weight: 900;
+                }
+            }
+        }
+        .sum{
+            border-bottom: 1px solid #333;
+            div{
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0;
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+        .real-sum{
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+            .real-sum-title{
+                font-size: 18px;
+                font-weight: 700;
+            }
+            .real-sum-price{
+                color: orangered;
+                font-size: 20px;
+                span{
+                    color: dimgray;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
